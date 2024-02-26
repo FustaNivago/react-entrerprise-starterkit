@@ -1,5 +1,5 @@
 # react-entrerprise-starterkit
-The modular architecture approach serves as a skeleton for enterprise projects. It might be useful for beginners or educational purposes as well as for quick start developing new project.
+The modular architecture approach serves as a skeleton for enterprise projects. It might be useful for beginners and educational purposes, as well as for quickly starting a new project.
 
 ## How do I start my React enterprise application?
 **What frameworks, libraries should I use and what architecture to choose?** <br/>
