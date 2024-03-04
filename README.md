@@ -1,5 +1,5 @@
 # react-entrerprise-starterkit
-The modular architecture approach serves as a skeleton for enterprise projects. It might be useful for beginners and educational purposes, as well as for quickly starting a new project.
+The modular architecture approach serves as a skeleton for enterprise projects. It might be useful for beginners or educational purposes, as well as for quickly starting a new project.
 
 ## How do I start my React enterprise application?
 **What frameworks, libraries should I use and what architecture to choose?** <br/>
@@ -26,7 +26,7 @@ Material UI allows you to avoid use css in many cases, it uses EmotionJS for sty
 ### Testing tools
 Storybook for easier testing and interation on components. Testing framework - Jest. Visual regression testing tool for Storybook - Loki. All tests must be located in the same folder as the component\tool\lib.
 ### Naming convention
-All folders and files names, except tsx components, should start with lower case. <br/> i18 translation keys we use pattern "module_compnent_key_name" where "module" - is a logical domain in terms of application, for example "admin", "user" or "dashboard", if it is generic might be "{label | warning | error}_key_name" or "{page\component name}_key_name" name from shared module. All imports must be absolute, if components are not nested, otherwise must be relative.
+All folders and files names, except tsx components, should start with lower case. Unlike other components, pages must include "Page" suffix in their names to distinguish them easily <br/> i18 translation keys we use pattern "module_compnent_key_name" where "module" - is a logical domain in terms of application, for example "admin", "user" or "dashboard", if it is generic might be "{label | warning | error}_key_name" or "{page|component name}_key_name" name from shared module. All imports must be absolute, if components are not nested, otherwise must be relative.
 ### Folder structure
 * app - contains application itself
 * assets - contains common styles, images, icons
