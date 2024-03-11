@@ -34,10 +34,8 @@ const LoginPage = () => {
   return (
     <Box flexGrow={1} display="flex" justifyContent="center" alignItems="center" bgcolor="primary.main">
       <Paper elevation={3}>
-        <Box width={400} minHeight={300} display="flex" flexDirection="column" alignItems="center" padding={2}>
-          <img src={ComanyLogo} style={{ maxHeight: 200, maxWidth: 300 }} />
-          Login Page
-          <h2>{t('login.slogan')}</h2>
+        <Box width={400} minHeight={200} display="flex" flexDirection="column" alignItems="center" padding={2}>
+          <h2>{t('login_page')}</h2>
           <LoginForm onSubmit={onLogin} />
         </Box>
       </Paper>

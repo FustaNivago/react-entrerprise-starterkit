@@ -20,7 +20,7 @@ i18n
     },
 
     backend: {
-      loadPath: `${import.meta.env.VITE_API_BASE_URL}/media/GetLocalization?c={{lng}}&d=${new Date().getMonth()}- ${new Date().getDate()}`,
+      loadPath: `${import.meta.env.VITE_API_BASE_URL}/traslations`,
     },
   });
 
