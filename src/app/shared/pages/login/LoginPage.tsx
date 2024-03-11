@@ -1,13 +1,14 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
-import ComanyLogo from 'src/assets/images/company_logo.png';
+
 import { useContextState } from '../../state';
 import { RoutePath } from '../../routes';
 import LoginForm from './components/LoginForm';
 import { LoginFormData } from './model/loginFormSchema';
-import { useEffect } from 'react';
+import { apiGet, apiUrl } from 'src/app/shared/api';
 
 const LoginPage = () => {
   const { t } = useTranslation();
@@ -23,12 +24,16 @@ const LoginPage = () => {
   }, []);
 
   const onLogin = (data: LoginFormData) => {
-    setUserAuthenticated(true);
-    if (redirectTo) {
-      navigate(redirectTo);
-    } else {
-      navigate(RoutePath.dashboard);
-    }
+    apiGet(apiUrl.users, data, {
+      onSuccess: () => {
+        setUserAuthenticated(true);
+        if (redirectTo) {
+          navigate(redirectTo);
+        } else {
+          navigate(RoutePath.dashboard);
+        }
+      },
+    });
   };
 
   return (

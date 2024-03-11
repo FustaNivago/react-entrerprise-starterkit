@@ -1,4 +1,4 @@
 {
   "users": [{ "id": 1, "name": "User", "lastName": "Test", "login": "test", "password": "1234" }],
-  "traslations": { "login_page": "Login", "application_error": "error" }
+  "traslations": { "login_page": "Login", "application_error": "error", "offline_error": "No internet connection" }
 }

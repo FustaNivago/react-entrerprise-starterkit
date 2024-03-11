@@ -11,7 +11,7 @@ i18n
     ns: [],
     defaultNS: undefined,
     fallbackLng: 'en',
-    debug: false,
+    debug: true,
     load: 'languageOnly',
     partialBundledLanguages: false,
 
